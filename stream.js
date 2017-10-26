@@ -5,10 +5,10 @@ var apiKeys = require('./config.js');
 var Twitter = new TwitterPackage(apiKeys);
 
 // Streaming API
-Twitter.stream('statuses/filter', {track: '#NationalPumpkinDay'}, function(stream){
+Twitter.stream('statuses/filter', {track: '#NationalPumpkinDay', lang: 'en'}, function(stream){
     // when we get some tweet data (every tweet matching our stream track)
     stream.on('data', function(tweet){
-        console.log(tweet.text);
+        console.log(tweet.user.name + ' - ' + tweet.text);
     });
 
     stream.on('error', function(error){
