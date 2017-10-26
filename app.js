@@ -30,3 +30,9 @@ Twitter.stream('statuses/filter', {track: '#NationalPumpkinDay'}, function(strea
         console.log(error);
     });
 });
+
+/* Notes for above:
+1) Basically we look for any tweets that contain #NationalPumpkinDay
+2) Then simply console.log the text of that tweet (we could get anything from the tweet object)
+3) If there is any error is getting a tweet, console.log it!
+*/
