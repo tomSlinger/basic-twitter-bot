@@ -1,4 +1,5 @@
 var TwitterPackage = require('twitter');
+// Store Keys here, added to .gitignore
 var apiKeys = require('./config.js');
 
 var Twitter = new TwitterPackage(apiKeys);
