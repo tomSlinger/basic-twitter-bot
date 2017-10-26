@@ -6,6 +6,7 @@ var Twitter = new TwitterPackage(apiKeys);
 
 // Streaming API
 Twitter.stream('statuses/filter', {track: '#NationalPumpkinDay'}, function(stream){
+    // when we get some tweet data (every tweet matching our stream track)
     stream.on('data', function(tweet){
         console.log(tweet.text);
     });

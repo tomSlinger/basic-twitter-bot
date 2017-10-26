@@ -1,6 +1,6 @@
 # Basic Twitter Bot
 
-## Post a tweet
+## Post a Tweet
 `node post.js`
 
 ## Stream a Hashtag
